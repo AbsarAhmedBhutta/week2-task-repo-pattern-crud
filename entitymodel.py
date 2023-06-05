@@ -26,6 +26,7 @@ class Order:
     def __repr__(self):
         return f"User ID: {self.id}, Name: {self.user}, Price:{self.product_name}"
 
+
 class Category:
     def __init__(self, id, name):
         self.id = id
@@ -33,6 +34,7 @@ class Category:
 
     def __repr__(self):
         return f"User ID: {self.id}, Name: {self.name}"
+
 
 class Review:
     def __init__(self, id, product_name, user, rating, comment):

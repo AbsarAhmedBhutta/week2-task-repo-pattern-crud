@@ -1,6 +1,5 @@
 from abc import ABC, abstractmethod
-from typing import TypeVar, Generic
-from typing import TypeVar, Dict, List, Union
+from typing import TypeVar, Dict, List, Union, Generic
 
 T = TypeVar('T')
 Key = Union[str, int]
@@ -26,3 +25,5 @@ class Interface(ABC, Generic[T]):
     @abstractmethod
     def search(self, key: Key) -> Dict[Key, List[T]]:
         pass
+
+
